@@ -1,11 +1,15 @@
 <!DOCTYPE html>
+<!-- Infographic HTML starts here -->
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>생성형 AI를 똑똑하고 바르게 활용하는 방법</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Pretendard Font CDN -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         /* Custom CSS for the infographic */
@@ -109,6 +113,7 @@
 
         <section id="investigation-plan" class="card">
             <h2 class="section-title">Ⅱ. 조사 계획</h2>
+            <!-- Visualisation: Investigation Plan Diagram -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-[#263238]">
                 <div class="flex items-start p-4 bg-[#E0F2FE] rounded-lg shadow-sm">
                     <div class="plan-icon">1</div>
@@ -158,6 +163,7 @@
                 <p class="text-base text-[#263238] mb-4">
                     생성형 AI 활용 목적에 대한 질문에서 '학습 자료 찾기 및 이해'가 가장 높은 응답률을 보였다. 이는 생성형 AI가 주로 공부 보조 도구로 활용되고 있음을 나타낸다.
                 </p>
+                <!-- Visualisation: Survey 1 Chart -->
                 <div class="chart-container w-full max-w-lg mx-auto">
                     <canvas id="survey1Chart"></canvas>
                 </div>
@@ -168,6 +174,7 @@
                 <p class="text-base text-[#263238] mb-4">
                     AI가 제공하는 정보의 정확성에 대한 신뢰도는 '보통이다'와 '신뢰한다'가 가장 높은 비율을 차지했다.
                 </p>
+                <!-- Visualisation: Survey 2 Chart -->
                 <div class="chart-container w-full max-w-lg mx-auto">
                     <canvas id="survey2Chart"></canvas>
                 </div>
@@ -178,6 +185,7 @@
                 <p class="text-base text-[#263238] mb-4">
                     다수의 학생들이 생성형 AI의 오류 가능성을 비교적 잘 인식하고 있음을 확인하였다.
                 </p>
+                <!-- Visualisation: Survey 3 Chart -->
                 <div class="chart-container w-full max-w-lg mx-auto">
                     <canvas id="survey3Chart"></canvas>
                 </div>
@@ -188,12 +196,14 @@
                 <p class="text-base text-[#263238] mb-4">
                     절반 이상의 학생들이 생성형 AI 답변을 검토하려는 태도를 보였다. 이는 비판적 수용 태도를 의미한다.
                 </p>
+                <!-- Visualisation: Survey 4 Chart -->
                 <div class="chart-container w-full max-w-lg mx-auto">
                     <canvas id="survey4Chart"></canvas>
                 </div>
             </div>
 
             <h3 class="text-xl md:text-2xl font-bold text-[#2A62B6] mb-4">2. 인터뷰 요약</h3>
+            <!-- Visualisation: Interview Summary -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="interview-card">
                     <h4 class="interview-name">신수아 학생</h4>
@@ -208,6 +218,11 @@
                         <li>AI 사용 초기에 만족했으나, 자신의 실력과 AI 답변 사이의 괴리에서 혼란을 느꼈다.</li>
                         <li>과제에 AI가 작성한 문장을 그대로 제출했다가 감점을 받은 경험을 통해, AI의 역할은 참고 수준에 머물러야 한다는 교훈을 얻었다.</li>
                     </ul>
+                    <!-- Visualisation: Hong Sung-jae Interview Photo -->
+                    <div class="mt-4 text-center">
+                        <img src="src/스크린샷 2025-06-10 143801.png" alt="홍성재 학생 인터뷰 사진" class="w-full md:w-3/4 lg:w-full mx-auto rounded-xl shadow-lg object-cover">
+                        <p class="text-sm text-[#A9A9A9] mt-2">홍성재 학생 인터뷰 진행 모습</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -587,5 +602,6 @@
             }
         });
     </script>
-    </body>
+    <!-- 인포그래픽 HTML이 여기서 끝납니다. -->
+</body>
 </html>
